@@ -45,13 +45,35 @@ export function dives(lista){
 
 
 export function Osszar(lista){
-    let txt="";
+    let ar="";
+    for (let index = 0; index < lista.length; index++) {
+        ar +=lista[index].ar;    
+    }
+    console.log(ar);
+    return ar;
+
+
+
+
+}
+
+export function legdragabbtermek(lista){
+    let maxIndex = 0;
+    for (let index = 0; index < lista.length; index++) {
+       if (lista[maxIndex].ar < lista[index].ar){
+            maxIndex=index;
+
+       } 
+        
+    }
+    return maxIndex;
+
+
+}
+export function koromcipodb(lista){
+    let db = 0
     for (let index = 0; index < lista.length; index++) {
         
         
     }
-
-
-
-
 }
